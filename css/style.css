@@ -48,7 +48,22 @@
 
   /* background-color: rgba(0, 0, 0, 0.5); */
 }
-
+footer {
+  background-color: #ddd;
+  padding: 10px 20px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  /* border: solid; */
+  width: 200px;
+  justify-content: space-around;
+}
+footer ul li img {
+  width: 20px;
+}
 @media (min-width: 0px) and (max-width: 425px) {
   .top-img img {
     width: 100vw;
