@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-nav {
+  height: 50px;
+  background-color: #0000ff;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.top-nav .text {
+  color: #ffffff;
+  margin-left: 20px;
+  font-family: inherit;
+  font-size: 25px;
+}
+.main-page {
+  margin-top: 60px;
+}
+.top-img img {
+  width: 100vw;
+}
