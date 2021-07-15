@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .top-nav {
-  height: 50px;
+  height: 60px;
   background-color: #0000ff;
   width: 100vw;
   display: flex;
@@ -21,7 +21,7 @@
   font-size: 25px;
 }
 .main-page {
-  margin-top: 60px;
+  margin-top: 65 px;
 }
 .flexbox {
   display: flex;
@@ -51,8 +51,9 @@
   /* background-color: rgba(0, 0, 0, 0.5); */
 }
 footer {
-  background-color: #ddd;
+  background-color: #0000ff;
   padding: 10px 20px;
+  color: #ddd;
 }
 footer ul {
   margin: 0;
@@ -63,8 +64,13 @@ footer ul {
   width: 200px;
   justify-content: space-around;
 }
+/* footer ul li {
+  margin: 0;
+  padding: 0;
+} */
 footer ul li img {
   width: 20px;
+  filter: invert();
 }
 @media (min-width: 0px) and (max-width: 425px) {
   .top-img img {
