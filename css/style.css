@@ -21,6 +21,56 @@
 .main-page {
   margin-top: 60px;
 }
+.flexbox {
+  display: flex;
+}
+/* .top-img {
+  width: 70vw;
+  border: solid;
+} */
 .top-img img {
-  width: 100vw;
+  width: 70vw;
+  max-width: 700px;
+}
+.img-text {
+  /* position: absolute; */
+  /* top: 100px; */
+  display: flex;
+  padding: 10px;
+  /* flex-direction: column; */
+  align-items: center;
+}
+.flexbox .item .text {
+  color: #000;
+  /* border: solid; */
+  font-size: 5vw;
+  font-family: 'Otomanopee One', sans-serif;
+
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  .top-img img {
+    width: 100vw;
+  }
+  .img-text {
+    position: absolute;
+    top: 105px;
+    width: 80vw;
+    padding: 10px 10px;
+    /* color: #000; */
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .flexbox .item .text {
+    color: #000;
+    /* border: solid; */
+    font-size: 5vw;
+    font-family: 'Otomanopee One', sans-serif;
+    margin-bottom: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+  }
+  .flexbox .item button {
+    width: 100px;
+    height: 40px;
+  }
 }
