@@ -21,7 +21,7 @@
   font-size: 25px;
 }
 .main-page {
-  margin-top: 65 px;
+  margin-top: 65px;
 }
 .flexbox {
   display: flex;
@@ -72,6 +72,19 @@ footer ul li img {
   width: 20px;
   filter: invert();
 }
+.contact-icon li img {
+  width: 20px;
+  /* filter: invert(); */
+}
+.contact-icon {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* border: solid; */
+  display: flex;
+  justify-content: space-around;
+  max-width: 200px;
+}
 @media (min-width: 0px) and (max-width: 425px) {
   .top-img img {
     width: 100vw;
@@ -93,7 +106,7 @@ footer ul li img {
     /* background-color: rgba(0, 0, 0, 0.5); */
   }
   .flexbox .item button {
-    width: 100px;
+    width: auto;
     height: 40px;
   }
 }
