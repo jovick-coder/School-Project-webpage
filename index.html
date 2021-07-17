@@ -33,34 +33,55 @@
             <div class="item img-text">
                 <div class="">
                     <div class="text"> Make your Project Request</div>
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScDgpkUVU2QVclGCtz6lWbQBNkuzcTbVK3HfrTXsvvH08mcEQ/viewform">
-                        <button class="btn btn-sm btn-primary">Make Request on a Click</button>
-                    </a>
+
+                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">Make
+                        Request on a Click</button>
+
                 </div>
             </div>
         </div>
 
         <hr>
-        <div class="card" style="margin: 20px;">
-            <div class="card-body">
-                <h5 class="card-title">Make Your Project Request</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Click and fill the form</h6>
-                <p class="card-text">
-                    Fill project request form with instruction on the form section
-                    <br>
-                    Making sure names and matric number are correct before submission
-                    <br>
-                    Request is Made With a form provided on the button below 👇<br>
-                    <br>
-                    <b>Note: </b> Request and Agreement should be made on time to ensure quick action on your website
-                </p>
-                <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScDgpkUVU2QVclGCtz6lWbQBNkuzcTbVK3HfrTXsvvH08mcEQ/viewform">
-                    <button class="btn btn-sm btn-primary">Make Request on a Click</button>
-                </a>
+        <!-- Modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Security pass</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <b>
+                            Provide Access Key.
+                        </b>
+                        <form action="">
+                            <input type="text" id='passkey' class="form-control" placeholder="Access Key">
+
+                            <sup><b id="error" style="color: red;"></b></sup>
+                            <sup><b id="message" style="color: rgb(21, 255, 0);"></b></sup>
+                        </form>
+                        <p>
+
+                            <!-- <sub>
+                                Access Key is Given After Payment
+                            </sub> -->
+                            <br>
+                            <sub>
+                                <b>Forgot Access Key :</b> Contact The admin And provide prove for payment <br>
+                                A New Access Key will be given You
+                            </sub>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="checkAccess()">Access</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
         <div class="card" style="margin: 20px;">
             <div class="card-body">
                 <h5 class="card-title">About Us</h5>
@@ -70,7 +91,7 @@
                     in
                     the implementation of the project topic in areas of developing a website,<br> with aims and
                     objective to
-                    preform a unique role in the development of the site required for your project and and to ensure
+                    preform a unique role in the development of the site required for your project and to ensure
                     that the site is being
                     developed on time and it's good quality and best of standard.
                     <br>
@@ -84,9 +105,29 @@
         </div>
         <div class="card" style="margin: 20px;">
             <div class="card-body">
+                <h5 class="card-title">Make Your Project Request</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Click and fill the form</h6>
+                <p class="card-text">
+                    Fill project request form with instruction on the form section
+                    <br>
+                    Making sure names and matric number are correct before submission
+                    <br>
+                    Request is Made With a form provided on the button below 👇<br>
+                    <br>
+                    <b>Note: </b> Request and Agreement should be made on time to ensure quick action on your website
+                </p>
+
+                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">Make Request on a
+                    Click</button>
+
+            </div>
+        </div>
+
+        <div class="card" style="margin: 20px;">
+            <div class="card-body">
                 <h5 class="card-title">Contact Us</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Meet my team</h6>
-                <p class="card-text">
+                <p class="card-text" style="margin: 0;">
                     <b>Josiah Victor</b>
                     <br> <sup>Backend developer php and mysql local server 'Xampp'.</sup>
                 <ul class="contact-icon">
@@ -106,9 +147,49 @@
                     </li>
                 </ul>
                 </p>
-                <p class="card-text">
-                    <b>Uvia</b>
+                <p class="card-text" style="margin: 0;">
+                    <b>Udoko Uvie</b>
                     <br> <sup>Frontend developer html, css, bootstrap, js.</sup>
+                <ul class="contact-icon">
+                    <li><b>Contact me:</b></li>
+                    <li><a href="https://wa.me/qr/TY3FT6PYAA67G1">
+                            <img src="img/whatsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/Uvieeu?s=09">
+                            <img src="img/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                </p>
+                <p class="card-text" style="margin: 0;">
+                    <b>Gracey </b>
+                    <br> <sup>Graphic designer, Frontend developer</sup>
+                <ul class="contact-icon">
+                    <li><b>Contact me:</b></li>
+                    <li><a href="#">
+                            <img src="img/whatsapp.svg" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <img src="img/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                </p>
+                <p class="card-text" style="margin: 0;">
+                    <b>Uncle Big Bay </b>
+                    <br> <sup>Fullstack developer html, css, bootstrap, js, Reactjs, Nodejs</sup>
                 <ul class="contact-icon">
                     <li><b>Contact me:</b></li>
                     <li><a href="#">
@@ -151,5 +232,7 @@
         </ul>
     </footer>
 </body>
+
+<script src="js/main.js"></script>
 
 </html>

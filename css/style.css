@@ -9,8 +9,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  /* position: fixed; */
-  /* position: absolute; */
+
   top: 0;
   z-index: 1000px;
 }
@@ -22,6 +21,9 @@
 }
 .main-page {
   margin-top: 65px;
+}
+p {
+  margin: 0;
 }
 .flexbox {
   display: flex;
