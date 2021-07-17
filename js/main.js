@@ -16,6 +16,7 @@ function checkAccess() {
             error.innerHTML = 'Incorrect Access key ' + `<br>` + 'Contact the Admin if forgoten';
             passKey.style.borderColor = 'red'
         } else {
+            error.innerHTML = '';
             passKey.style.borderColor = 'rgb(21, 255, 0)'
             message.innerHTML = 'Access Granted ' + `<br>` + 'Thanks for patronage';
             setTimeout(() => {
